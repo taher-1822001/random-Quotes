@@ -2,8 +2,9 @@ import React from "react";
 import 'bootstrap/dist/css/bootstrap.css';
 import $ from 'jquery';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faKiwiBird, faLink } from '@fortawesome/free-solid-svg-icons'
+import { faKiwiBird, faLink, faX } from '@fortawesome/free-solid-svg-icons'
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
+import { faTwitter } from "@fortawesome/free-brands-svg-icons";
 
 class QuoteComponent extends React.Component
 {
@@ -119,22 +120,22 @@ class QuoteComponent extends React.Component
 
                 
 
-                <div className="col-lg-12 p-4 border">
+                <div className="col-12 p-4 border">
                     <div className="row">
-                    <div className="col-lg-2">
+                    <div className="col-2">
                     <button className="btn shadow" >
                         <FontAwesomeIcon icon={faLink} />
                     </button>
                     </div>
 
-                    <div className="col-lg-2">
+                    <div className="col-2">
                     <button className="btn shadow" >
                         
-                        <FontAwesomeIcon icon={faKiwiBird} />
+                        <FontAwesomeIcon icon={faTwitter} />
                     </button>
                     </div>
 
-                    <div className="col-lg-8 d-flex justify-content-end ">
+                    <div className="col-8 d-flex justify-content-end ">
 
                     <button className="btn shadow " onClick={this.quoteGenerator.bind(this)}>New Quote</button>
                     </div>
